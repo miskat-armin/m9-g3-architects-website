@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+.text-light-gray{
+    color: #727272;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -58,7 +62,6 @@ nav li a {
 }
 
 .banner-description {
-    color: #727272;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -81,6 +84,55 @@ nav li a {
 
 .banner img {
     width: 100%;
+}
+
+main {
+    max-width: 840px;
+    margin: 70px auto;
+}
+
+#img-1,
+#img-2,
+#img-3,
+#img-4 {
+    width: 200px;
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.teams-content {
+    padding: 40px 70px;
+}
+
+.quick-list {
+    color: #727272;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.of-our {
+    color: #131313;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.text-features {
+    color: #FF900E;
+    font-size: 35px;
+    font-weight: 700;
+}
+.teams-description{
+    padding-top: 20px;
 }
 
 /* For mobile devices */
@@ -108,11 +160,17 @@ nav li a {
     .btn-primary {
         margin-top: 10px;
     }
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
 }
 
 /* For tablet/medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    nav {
+    nav{
         flex-direction: column;
     }
 
@@ -131,53 +189,5 @@ nav li a {
     .btn-primary {
         margin-top: 20px;
     }
-}
-
-main {
-    max-width: 840px;
-    margin: 0 auto;
-}
-
-#img-1,
-#img-2,
-#img-3,
-#img-4 {
-    width: 200px;
-}
-
-.teams-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.teams-img-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-}
-
-.teams-content {
-    padding: 150px 70px;
-}
-
-.quick-list {
-    color: #727272;
-    font-size: 35px;
-    font-weight: 500;
-}
-
-.of-our {
-    color: #131313;
-    font-size: 35px;
-    font-weight: 700;
-}
-
-.text-features {
-    color: #FF900E;
-    font-size: 35px;
-    font-weight: 700;
-}
-.teams-description{
-    padding-top: 20px;
+    
 }
