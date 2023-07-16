@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-.text-light-gray{
+.text-light-gray {
     color: #727272;
 }
 
@@ -87,7 +87,7 @@ nav li a {
 }
 
 main {
-    max-width: 840px;
+    max-width: 1040px;
     margin: 70px auto;
 }
 
@@ -111,7 +111,7 @@ main {
 }
 
 .teams-content {
-    padding: 40px 70px;
+    padding: 40px 90px;
 }
 
 .quick-list {
@@ -131,8 +131,51 @@ main {
     font-size: 35px;
     font-weight: 700;
 }
-.teams-description{
+
+.teams-description {
     padding-top: 20px;
+}
+
+.facts-title {
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.facts-desc {
+    max-width: 600px;
+}
+
+.card-title {
+    color: #727272;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-stats {
+    color: #424242;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    width: 270px;
+    height: 180px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card img {
+    padding-bottom: 5px;
+}
+
+.facts-card-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 /* For mobile devices */
@@ -160,17 +203,35 @@ main {
     .btn-primary {
         margin-top: 10px;
     }
-    .teams-container{
+
+    .teams-container {
         flex-direction: column;
     }
-    .teams-img-container{
+
+    .teams-img-container {
         grid-template-columns: 1fr;
+    }
+
+    .facts-card-container {
+        flex-direction: column;
+        margin-left: 60px;
+    }
+
+    .facts-desc {
+        max-width: 300px;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .facts-title {
+        text-align: center;
+        margin-top: 20px;
     }
 }
 
 /* For tablet/medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    nav{
+    nav {
         flex-direction: column;
     }
 
@@ -189,5 +250,13 @@ main {
     .btn-primary {
         margin-top: 20px;
     }
-    
+    .facts-card-container{
+        gap: 5px;
+        margin-left: 10px;
+    }
+
+    .card{
+        width: 200px;
+    }
+
 }
